@@ -5,7 +5,8 @@ target 'Common' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Common
+  pod 'SnapKit'
+  pod 'ShimmerSwift'
 
   target 'CommonTests' do
     # Pods for testing

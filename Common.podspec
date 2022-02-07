@@ -8,13 +8,20 @@
 
 Pod::Spec.new do |s|
 
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth.
+  #
+
   s.platform = :ios
   s.ios.deployment_target = '14.0'
   s.name = "Common"
   s.summary = "WonderfullIndonesia Common.framework for modularization"
   s.requires_arc = true
   
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
 
   s.license = { :type => "MIT", :file => "LICENSE" }
   
@@ -28,10 +35,11 @@ Pod::Spec.new do |s|
 
   s.source_files = "Common/**/*.{swift}"
   
-  #s.dependency 'Alamofire'
- 
+  s.dependency 'SnapKit'
+  s.dependency 'ShimmerSwift'
+  
   #s.resources = "Core/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   
   s.swift_version = "5.1"
-
+  
 end
